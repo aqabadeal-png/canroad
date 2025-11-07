@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>CanRoad: Roadside Assistance</title>
+    <meta name="description" content="Fast and reliable roadside assistance and mobile mechanic services across Canada. Get help now." />
+    <meta name="theme-color" content="#F9FAFB" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    
+    <!-- Hreflang tags for SEO -->
+    <link rel="alternate" href="https://www.canroad.example.com" hreflang="en-CA" />
+    <link rel="alternate" href="https://www.canroad.example.com" hreflang="fr-CA" />
+    <link rel="alternate" href="https://www.canroad.example.com" hreflang="x-default" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Leaflet for Maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "CanRoad",
+      "description": "Canadian roadside maintenance and mobile mechanic service.",
+      "telephone": "+12269982646",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Canada"
+      },
+      "url": "https://www.canroad.example.com"
+    }
+    </script>
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        overscroll-behavior-y: contain; /* Prevents pull-to-refresh */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "leaflet": "https://aistudiocdn.com/leaflet@^1.9.4",
+    "react-leaflet": "https://aistudiocdn.com/react-leaflet@^5.0.0",
+    "jspdf-autotable": "https://aistudiocdn.com/jspdf-autotable@^5.0.2",
+    "jspdf": "https://aistudiocdn.com/jspdf@^3.0.3",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^0.14.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/bundle.js"></script>
+  </body>
+</html>

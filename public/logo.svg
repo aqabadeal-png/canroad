@@ -1,0 +1,20 @@
+<svg viewBox="0 0 250 50" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <clipPath id="pin-clip">
+            <path d="M 20 11.5 C 16.5 11.5, 14 14.5, 14 18 C 14, 21.5, 20, 29, 20, 29 S 26, 21.5, 26, 18 C 26, 14.5, 23.5, 11.5, 20, 11.5 Z" />
+        </clipPath>
+    </defs>
+    <style>
+        .text { font-family: 'Poppins', sans-serif; font-size: 40px; font-weight: 600; letter-spacing: -0.5px; paint-order: stroke; stroke-width: 1.5px; stroke-linejoin: round; }
+    </style>
+    <text x="0" y="38" class="text" fill="#0F172A" stroke="white">Can</text>
+    <text x="88" y="38" class="text" fill="#EF4444" stroke="white">R</text>
+    <g transform="translate(118, 5)">
+        <circle cx="20" cy="20" r="20" fill="#EF4444" stroke="white" stroke-width="1.5"/>
+        <g clip-path="url(#pin-clip)">
+            <path d="M 20 11.5 C 16.5 11.5, 14 14.5, 14 18 C 14, 21.5, 20, 29, 20, 29 S 26, 21.5, 26, 18 C 26, 14.5, 23.5, 11.5, 20, 11.5 Z" fill="white"/>
+            <path d="M 20 18.5 L 20 25" stroke="#EF4444" stroke-width="2.5" stroke-dasharray="3 2" stroke-linecap="round"/>
+        </g>
+    </g>
+    <text x="168" y="38" class="text" fill="#EF4444" stroke="white">ad</text>
+</svg>

@@ -1,0 +1,7 @@
+{
+  "name": "CanRoad: Roadside Assistance ( canada)",
+  "description": "A mobile-first web app for CanRoad, a Canadian roadside maintenance and mobile mechanic service. Quickly request help, pinpoint your location on a map, and book a mechanic in seconds.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

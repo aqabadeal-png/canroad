@@ -1,0 +1,25 @@
+{
+  "name": "canroad-app",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.2",
+    "leaflet": "^1.9.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-leaflet": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "esbuild": "^0.23.0",
+    "typescript": "^5.5.3"
+  },
+  "scripts": {
+    "predev": "node -e \"const fs = require('fs'); fs.rmSync('.dev', { recursive: true, force: true }); fs.mkdirSync('.dev', { recursive: true }); fs.cpSync('public', '.dev', { recursive: true }); let c = fs.readFileSync('index.html', 'utf-8').replace('src=\\\"/index.tsx\\\"', 'src=\\\"/bundle.js\\\"'); fs.writeFileSync('.dev/index.html', c);\"",
+    "dev": "esbuild index.tsx --bundle --outfile=.dev/bundle.js --servedir=.dev --serve=:8000 --jsx=automatic --external:@google/genai --format=esm",
+    "build": "node -e \"const fs = require('fs'); fs.rmSync('dist', { recursive: true, force: true }); fs.mkdirSync('dist', { recursive: true }); fs.cpSync('public', 'dist', { recursive: true }); let c = fs.readFileSync('index.html', 'utf-8').replace('src=\\\"/index.tsx\\\"', 'src=\\\"/bundle.js\\\"'); fs.writeFileSync('dist/index.html', c);\" && esbuild index.tsx --bundle --outfile=dist/bundle.js --minify --sourcemap --jsx=automatic --external:@google/genai --format=esm"
+  }
+}
