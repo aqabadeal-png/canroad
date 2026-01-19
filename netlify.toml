@@ -1,6 +1,21 @@
+<<<<<<< HEAD
 [build]
   command = "npm run build"
   publish = "dist"
 
+[build.environment]
+  NPM_CONFIG_PRODUCTION = "false"
+
 [context.production.environment]
   NODE_ENV = "production"
+=======
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NPM_CONFIG_PRODUCTION = "false"
+
+[context.production.environment]
+  NODE_ENV = "production"
+>>>>>>> 34f97bd (netlify: install devDependencies during build (NPM_CONFIG_PRODUCTION=false))
