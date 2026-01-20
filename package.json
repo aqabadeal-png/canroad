@@ -21,6 +21,6 @@
     "predev": "node -e \"const fs = require('fs'); fs.rmSync('.dev', { recursive: true, force: true }); fs.mkdirSync('.dev', { recursive: true }); fs.cpSync('public', '.dev', { recursive: true }); let c = fs.readFileSync('index.html', 'utf-8').replace('src=\\\"/index.tsx\\\"', 'src=\\\"./bundle.js\\\"'); fs.writeFileSync('.dev/index.html', c);\"",
     "dev": "esbuild index.tsx --bundle --outfile=.dev/bundle.js --servedir=.dev --serve=:8000 --jsx=automatic --external:@google/genai --format=esm",
     "build": "node -e \"const fs = require('fs'); fs.rmSync('dist', { recursive: true, force: true }); fs.mkdirSync('dist', { recursive: true }); fs.cpSync('public', 'dist', { recursive: true }); let c = fs.readFileSync('index.html', 'utf-8').replace('src=\\\"/index.tsx\\\"', 'src=\\\"./bundle.js\\\"'); fs.writeFileSync('dist/index.html', c);\" && esbuild index.tsx --bundle --outfile=dist/bundle.js --minify --sourcemap --jsx=automatic --external:@google/genai --format=esm",
-    "preview": "esbuild --servedir=dist --serve=8001"
+    "preview": "esbuild --servedir=dist --port=8001"
   }
 }

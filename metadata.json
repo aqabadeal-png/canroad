@@ -1,7 +1,9 @@
+
 {
-  "name": "CanRoad: Roadside Assistance ( canada)",
-  "description": "A mobile-first web app for CanRoad, a Canadian roadside maintenance and mobile mechanic service. Quickly request help, pinpoint your location on a map, and book a mechanic in seconds.",
+  "name": "CanRoad: Roadside Assistance (Canada)",
+  "description": "Professional mobile mechanic and roadside service app powered by Supabase and Gemini AI.",
   "requestFramePermissions": [
-    "geolocation"
+    "geolocation",
+    "microphone"
   ]
 }
